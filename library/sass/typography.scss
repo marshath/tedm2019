@@ -1,0 +1,131 @@
+/* Typography Styles */
+
+/* -------------------------- */
+/* Icon Font */
+/* -------------------------- */
+
+@font-face {
+	font-family: '33-icons';
+	src:url('library/fonts/33-icons.eot');
+	src:url('library/fonts/33-icons.eot?#iefix') format('embedded-opentype'),
+		url('library/fonts/33-icons.woff') format('woff'),
+		url('library/fonts/33-icons.ttf') format('truetype'),
+		url('library/fonts/33-icons.svg#33-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: '33-icons';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+/* -------------------------- */
+/* Body Text */
+/* -------------------------- */
+
+body {
+	color: $text;
+	@include regular;
+	line-height: $base;
+	background: url(library/images/pattern-paper.jpg);
+}
+
+h2, h3, h4, h5, h6 {
+	@include square-font;
+	line-height: 1em;
+	margin: 0 0 ($base/2) 0;
+}
+
+h2, h3 { text-shadow: 0 1px white; }
+h2 { font-size: 2em; }
+.h2-small { font-size: $font12; }
+h2.indent { padding-left: 1em; }
+h3 { font-size: $font20; }
+p { font-size: $font16; line-height: 1.6; }
+p.space { margin-bottom: ($base*2); }
+p.space-columns { margin-bottom: ($base*2); }
+
+
+
+hr {
+	border: none;
+	border-bottom: $line;
+}
+.uppercase { text-transform: uppercase; }
+
+.large {
+	font-size: 1.8em;
+	line-height: 1em;
+}
+
+
+
+::selection { background: $orange-light; }
+
+.screen-reader-text {
+	display: none;
+}
+	
+
+
+/* -------------------------- */
+/* Global Links */
+/* -------------------------- */
+
+a {
+	color: lighten($text,30%);
+	text-decoration: none;
+	&:hover {
+		color: $orange;
+	}
+}
+
+a.primary-btn, .wpcf7-form .wpcf7-submit, .sidebar-mc-form .button { /* --------- Primary Button --------- */
+	width:100%;
+	background: $green;
+	color: white;
+	text-shadow: 0 2px 0 black;
+	padding: $base;
+	display: block;
+	border: 0;
+	@include box-shadow(inset 0px 0px 0px black);
+	@include transition(all, 1s, ease-out);
+	&:hover {
+		background: lighten($green, 20%);
+		@include box-shadow(inset 0px 0px 40px darken($green,10%));
+		@include transition(all, 0s, linear);
+	}
+	&:active {
+		background: lighten($green, 20%);
+		@include box-shadow(inset 0px 0px 0px black);
+	}
+}
+
+a.secondary-btn, .sidebar-mc-form .button2 { /* --------- Secondary Button --------- */
+	background-color: $gray-light-alpha;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, $gray-light-alpha), color-stop(1, $gray-dark-alpha) );
+	background: -moz-linear-gradient( center top, $gray-light-alpha 5%, $gray-dark-alpha 100% );
+	background: -o-linear-gradient( center top, $gray-light-alpha 5%, $gray-dark-alpha 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#d1d0cf');
+	color: lighten($text,20%);
+	padding: ($base/2) $base;
+	display: inline-block;
+	@include radius($corner);
+	border: 1px solid darken($tan,10);
+	box-shadow: inset 0px 1px 2px white, inset 0px -1px 1px darken($tan,4), 0px 1px 1px white;
+	&:hover {
+		background-color: $gray-dark-alpha;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, $gray-dark-alpha), color-stop(1, $gray-light-alpha) );
+		background: -moz-linear-gradient( center top, $gray-dark-alpha 5%, $gray-light-alpha 100% );
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1d0cf', endColorstr='#ededed');
+		color: $text;
+		box-shadow: inset 0px -1px 2px white, 0px 1px 1px white;
+	}
+}

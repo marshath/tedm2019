@@ -1,0 +1,236 @@
+/* Sidebar Styles */
+
+
+
+/*---------------------------------- */
+/*----------     Aside    -----------*/
+/*---------------------------------- */
+
+div.quotes { /* --------- Customer Quotes --------- */
+	margin-left: -2%;
+}
+.testimonial {
+	width: 31%;
+	margin: 0 0 0 2%;
+	float: left;
+	position: relative;
+	@media screen and (max-width: $mobile-h) {
+		width: 100%;
+	}
+	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
+		width: 48%;
+		blockquote:last-child {
+			display: none;
+		}
+	}
+}
+
+.client-quotes, .related-sites {
+	h3 {
+		width: 100%;
+		font-size: 1.4em;
+		text-shadow: 0 1px white;
+		display: block;
+		vertical-align: middle;
+		.us-icon, .testimonial-icon {
+			font-size: 1.4em;
+		}
+		.related-sites-icon {
+			font-size: 1.2em;
+		}
+	}
+}
+
+.related-sites h3 {
+	margin-bottom: $base;
+}
+
+blockquote:before {
+	font-family: '33-icons';
+	speak: none;
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: normal;
+	line-height: 1;
+	@include font-smoothing(antialiased);
+	content: '\e01b';
+	color: darken($tan,1%);
+	position: absolute;
+	top: 0.125em;
+	left: 0;
+	z-index: -1;
+}
+
+.client-quotes {
+	p {
+		font-size: $font13;
+		text-indent: 1.5em;
+		margin-bottom: 0;
+		z-index: 2;
+	}
+	cite {
+		font-size: 0.675rem;
+		font-weight: bold;
+		margin-left: 1.5em;
+		&:before {
+			content: '—'
+		}
+		a {
+			color: $orange;
+			font-weight: normal;
+			&:hover {
+				color: $text;
+			}
+		}
+	}
+}
+
+
+.related-sites li {
+	margin-bottom: 0;
+	@media screen and (max-width: $mobile-h) {
+		margin-bottom: $base;
+	}
+	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
+		width:31.3%;
+		&:nth-child(4) {
+			display: none;
+		}
+	}
+}
+
+
+.work-services { /* --------- Services --------- */
+	padding-left: 2%;
+	padding-right: 2%;
+	border-right: 1px solid darken($tan,12%);
+	border-left: 1px solid lighten($tan,15%);
+	h3 {
+		font-size: 1.4em;
+		margin-bottom: $base;
+		text-shadow: 0 1px white;
+	}
+	.services-img {
+		width: 100%;
+		height: 126px;
+		margin-bottom: $base;
+		display: block;
+		border: 0.2em solid white;
+		@include box-shadow(0 2px 2px rgba(0,0,0,0.3));
+		overflow: hidden;
+	}
+	.secondary-btn {
+		margin-bottom: 0;
+	}
+	@media screen and (max-width: $mobile-h) {
+		padding: $base 0 0;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid darken($tan,12%);
+		border-top: 1px solid lighten($tan,20%);
+		&:first-child {
+			padding: 0;
+		}
+		.secondary-btn {
+			margin-top: 0;
+			margin-bottom: $base;
+		}
+	}
+	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
+		padding: $base 0 0;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid darken($tan,12%);
+		border-top: 1px solid lighten($tan,20%);
+		.services-img {
+			width: 48%;
+			margin-right: 2%;
+			margin-bottom: 50px;
+			float: left;
+		}
+		p {
+			width: 48%;
+			margin-top: 0;
+			float: right;
+		}
+		.secondary-btn {
+			margin-top: 0;
+			margin-bottom: $base;
+		}
+	}
+}
+
+.work-services:first-child {
+	border-left: none;
+	@media screen and (max-width: $tablet-h) {
+		border-top: none;
+	}
+}
+
+.work-services:nth-child(3) {
+	border-right: none;
+	@media screen and (max-width: $tablet-h) {
+		border-bottom: none;
+	}
+}
+
+
+
+/*---------------------------------- */
+/*----------    Sidebar   -----------*/
+/*---------------------------------- */
+
+.sidebar-social-links { /* --------- Social Links --------- */
+	width: 100%;
+	background: rgba(255,255,255,0.4);
+	padding: $base 0;
+	margin-bottom: ($base*2);
+	h3 {
+		text-align: center;
+	}
+	ul {
+		border: none;
+		height: auto;
+	}
+	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
+		width: 100%;
+		margin-top: $base;
+		margin-right:0;
+	}
+}
+.fb-like-box {
+	background: white;
+}
+.twitter-follow {
+	margin-top: $base;
+	margin-bottom: $base;
+}
+.twitter-timeline {
+	width: 286px;
+	margin-top: $base;
+	margin-bottom: ($base*0.5);
+	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
+		width:48%;
+		float: right;
+		margin-right: 2%;
+	}
+}
+
+.sidebar-social-boxes {
+	width: 100%;
+	text-align: center;
+	padding: ($base*0.25) 0 ($base*1.25);
+}
+
+@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
+	.sidebar-tablet-f1 {
+		width: 50%;
+		float: left;
+	}
+	.sidebar-tablet-f2 {
+		width: 50%;
+		float: left;
+		margin-bottom: $base;
+	}
+}
+

@@ -1,0 +1,75 @@
+/* Forms Styles */
+
+/* -------------------------- */
+/* Contact Form */
+/* -------------------------- */
+
+.contact-page {
+	width: 60%;
+	float: left;
+	display: inline-block;
+	@media screen and (max-width: $tablet-h) {
+		width: 100%;
+	}
+}
+.message {
+	@include square-font;
+	font-size: 1.6em;
+	line-height: 1.1;
+}
+.contact {
+	margin-top: $base;
+}
+label {
+	display: none;
+}
+
+input.wpcf7-form-control, textarea.wpcf7-form-control, .mc-field-group input, .sidebar-search input[type='text'], .blog-content input[type='text'] { 
+	width: 100%;
+	background: lighten(black,96%);
+	padding: ($base/2) $base;
+	display: block;
+	border: 1px solid #aaa;
+	&:focus {
+		background: white;
+	}
+}
+
+textarea.wpcf7-form-control {
+	height: ($base*5);
+}
+
+
+/* -------------------------- */
+/* Search Form */
+/* -------------------------- */
+.search-callout {
+	margin-bottom: ($base*2);
+	.search-box {
+		border-top:1px solid #666;
+		position: relative;
+	}
+	input[type="text"] {
+		width: 100%;
+		background-color: $gray-light-alpha;
+		border: none;
+		border-bottom: 2px solid $text;
+		padding: ($base*0.5) 1em;
+		transition: all 0.3s ease;
+		&:hover {
+			background-color: #efefef;
+		}
+		&:focus {
+			background-color: white;
+			border-bottom: 2px solid $orange;
+		}
+	}
+	input[type="submit"] {
+		@extend a.primary-btn;
+		width:intrinsic;
+		position: absolute;
+		top: ($base*0.75);
+		right:0;
+		padding: ($base*0.5) 1em;
+	}
+}
