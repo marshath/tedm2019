@@ -51,7 +51,9 @@ h3 { font-size: $font20; }
 p { font-size: $font16; line-height: 1.6; }
 p.space { margin-bottom: ($base*2); }
 p.space-columns { margin-bottom: ($base*2); }
-
+.archive-title {
+	margin-bottom: $base;
+}
 
 
 hr {
