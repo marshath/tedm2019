@@ -19,12 +19,12 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 </div><?php // ------- .header-wrap ------- ?>
-
-<div id="main" class="article-wrap">
-	<div class="body-content clearfix" role="main">
+<main id="site-content" role="main" class="article-wrap">
+	
+	<div class="body-content clearfix">
 		<div class="contact-page">
 
-			<div class="featured-bar"><a href="/jam/">&laquo; Jam Archive</a></div>
+			<div class="featured-bar"><a href="<?php echo esc_url( home_url( '/jam/' ) ); ?>">&laquo; Jam Archive</a></div>
 				<table class="jams">
 
 					<thead>
@@ -80,6 +80,8 @@
 			</aside>
 			
 		</div>
-	</div> <?php // ------- .article-wrap ------- ?>
+	</div>
+
+</main>
 <?php endwhile; ?>
 <?php get_footer(); ?>

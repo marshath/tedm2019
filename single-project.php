@@ -7,11 +7,12 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   
 </div><!-- .header-wrap -->
-<div id="main" class="article-wrap">
+<main id="site-content" role="main" class="article-wrap">
 
-	<article class="content clearfix" role="main">
+	<article class="content clearfix">
     	
 		<h2><?php the_title(); ?></h2>
+		
 		<div class="flex-section-container">
 		    <div class="flexslider">
 		      <ul class="slides">
@@ -28,18 +29,19 @@ get_header(); ?>
 		      </ul>
 		    </div>
     	</div>
+    	
 		<div class="project-desc">
 			<?php the_content(); ?>
-		    <p>&nbsp;</p>
-		    <?php get_template_part('inc/inc-services'); ?>
 		</div>
+		
 	</article> <!-- .content -->
 	
-</div> <!-- .article-wrap -->
-<div class="related-wrap">
-
-	<?php get_sidebar('project'); ?>
+	<div class="related-wrap">
 	
-<?php // div ends in footer ?>
+		<?php get_sidebar('project'); ?>
+	
+	</div> <!-- .article-wrap -->
+	
+</main>
 <?php endwhile; ?>
 <?php get_footer(); ?>

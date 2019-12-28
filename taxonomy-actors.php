@@ -8,11 +8,12 @@
 <?php get_header(); ?>
 </div><?php // ------- .header-wrap ------- ?>
 
-<div id="main" class="article-wrap">
-	<div class="body-content clearfix" role="main">
+<main id="site-content" role="main" class="article-wrap">
+	
+	<div class="body-content clearfix">
 		<div class="contact-page">
 
-			<div class="featured-bar"><a href="/movie/">&laquo; Movie Archive</a></div>
+			<div class="featured-bar"><a href="<?php echo esc_url( home_url( '/movie/' ) ); ?>">&laquo; Movie Archive</a></div>
 
 			<div class="featured-bar">
 				<h5>&mdash; <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; // show filter title ?> &mdash;</h5>
@@ -81,6 +82,5 @@
 
 	</div>
 
-</div> <?php // ------- .article-wrap ------- ?>
-
+</main>
 <?php get_footer(); ?>

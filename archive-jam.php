@@ -16,10 +16,9 @@
 
 </div><?php // ------- .header-wrap ------- ?>
 
-
-
-<div id="main" class="article-wrap">
-	<div class="body-content clearfix" role="main">
+<main id="site-content" role="main" class="article-wrap">
+	
+	<div class="body-content clearfix">
 		<div class="contact-page">
 
 			<div class="featured-bar">Jam Archive</div>
@@ -96,7 +95,7 @@
 			</aside>
 			
 		</div>
+	</div>
 
-	</div> <?php // ------- .article-wrap ------- ?>
-
+</main>
 <?php get_footer(); ?>

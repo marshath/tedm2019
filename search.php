@@ -6,11 +6,11 @@
 
 get_header(); ?>
 </div><!-- .header-wrap -->
-<div id="primary" class="article-wrap">
+<main id="site-content" role="main" class="article-wrap">
 
 	<div class="body-content clearfix">
 	
-	    <section id="search" class="blog-content" role="main">
+	    <section id="search" class="blog-content">
 	    <?php if (have_posts()) : ?>
 
 			<div class="featured-bar">Jam Search</div>
@@ -86,4 +86,5 @@ get_header(); ?>
 		
 	</div> <!-- .content -->
 	
+</main>	
 <?php get_footer(); ?>

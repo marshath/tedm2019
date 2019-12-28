@@ -8,7 +8,7 @@ get_header(); ?>
 </div><!-- .header-wrap -->
 <div id="main" class="article-wrap">
 
-    <article class="content clearfix" role="main">
+    <article class="content clearfix">
 		<div class="breadcrumb"><p><a href="<?php echo esc_url( home_url() ); ?>">Home</a> / <a href="<?php echo esc_url( home_url( '/what-we-do/' ) ); ?>">What We Do</a><p></div>
 		<h2>Websites</h2>
 		<p>Congratulations! You have found this secret archive page for our projects :)</p>

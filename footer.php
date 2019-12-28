@@ -1,4 +1,4 @@
-</div><!-- .article-wrap -->
+<?php //</div><!-- .article-wrap --> ?>
 <div class="footer-wrap">
 
 	<footer class="site-footer">

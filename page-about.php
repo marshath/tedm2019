@@ -7,7 +7,7 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   
 </div><?php // ------- .header-wrap ------- ?>
-<div id="main" class="article-wrap">
+<main id="site-content" role="main" class="article-wrap">
 
 	<article class="content clearfix">
 		<h2><span class="services-icon" aria-hidden="true" data-icon="&#xe002;"></span> About Me</h2>
@@ -16,12 +16,12 @@ get_header(); ?>
 		<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="secondary-btn">Contact Me <span class="arrow_btn" aria-hidden="true" data-icon="&#xe018;"></span></a>
 	</article>
 	
-</div> <?php // ------- .article-wrap ------- ?>
-<div class="quotes-wrap">
-
-	<?php get_sidebar('about'); ?>
+	<div class="quotes-wrap">
 	
-</div> <?php // ------- .quotes-wrap ------- ?>  
+		<?php get_sidebar('about'); ?>
+		
+	</div> <?php // ------- .quotes-wrap ------- ?>  
 
+</main>
 <?php endwhile; ?>
 <?php get_footer(); ?>

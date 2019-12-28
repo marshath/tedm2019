@@ -7,9 +7,10 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   
 </div><?php // ------- .header-wrap ------- ?>
-<div id="main" class="article-wrap">
 
-	<div class="body-content clearfix" role="main">
+<main id="site-content" role="main" class="article-wrap">
+
+	<div class="body-content clearfix">
 	
 		<div class="contact-page">
 			<?php the_content(); ?>
@@ -21,12 +22,8 @@ get_header(); ?>
 		<?php get_sidebar('blog'); ?>
 
 	</div>
-	
-</div> <?php // ------- .article-wrap ------- ?>
 
-  <? wp_reset_query(); //Restore global post data
-    } 
-    ?>    
+</main>
 
 <?php endwhile; ?>
 <?php get_footer(); ?>

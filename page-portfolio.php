@@ -18,9 +18,9 @@ get_header(); ?>
     </section>
 
 </div> <?php // ------- .header-wrap ------- ?>
-<div id="main" class="article-wrap">
+<main id="site-content" role="main" class="article-wrap">
     
-	<article class="content clearfix" role="main">
+	<article class="content clearfix">
 		<?php the_content(); ?>
 		<?php wp_reset_query(); ?>
 		
@@ -53,7 +53,6 @@ get_header(); ?>
 		
 	</article><?php // ------- .content ------- ?>
 	
-</div> <?php // ------- .article-wrap ------- ?>
-
+</main>
 <?php endwhile; ?>
 <?php get_footer(); ?>

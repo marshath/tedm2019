@@ -146,6 +146,17 @@ $television: 1200px;
 /* -------------------------- */
 /* Page Containers */
 /* -------------------------- */
+body {
+	color: $text;
+	@include regular;
+	line-height: $base;
+	background: #100202;
+}
+
+main {
+	background: url(library/images/pattern-paper.jpg);
+	min-height: 65vh;			// force a minimum page height for the paper texture
+}
 
 .site-header, .article-wrap, .subcontent-wrap, .quotes-wrap, .services-wrap, .related-wrap, .footer-wrap { /* --------- Background Wraps --------- */
 	width: 100%;
@@ -173,13 +184,14 @@ $television: 1200px;
 
 
 .header-wrap { /* --------- Background Wrap Images --------- */	
-	background: #4f0909; /* Old browsers */
-	background: linear-gradient(to bottom,  #000000 20%,#4f0909 100%); /* W3C */
+	background: #100202; /* Old browsers */
+	background: linear-gradient(to bottom,  #100202 20%,#4f0909 100%); /* W3C */
 	padding-top: $base;
 }
 
 .article-wrap {
 	padding-top: ($base*3);
+	padding-bottom: $base;	// force main content to the footer
 }
 
 .services-wrap, .quotes-wrap, .related-wrap {
@@ -191,8 +203,8 @@ $television: 1200px;
 }
 
 .footer-wrap {
-	background: #4f0909; /* Old browsers */
-	background: linear-gradient(to bottom,  #4f0909 0%,#000000 80%); /* W3C */
+	background: #100202; /* Old browsers */
+	background: linear-gradient(to bottom,  #4f0909 0%,#100202 80%); /* W3C */
 	padding-top: $base;
 }
 
@@ -204,7 +216,6 @@ $television: 1200px;
 	height: 10px;
 	background: $orange; /* Old browsers */
 	background: linear-gradient(to right,  $orange 20%,$orange-light 80%); /* W3C */
-	margin-bottom: $base;
 	display: block;
 	position: absolute;
 	top: 0;

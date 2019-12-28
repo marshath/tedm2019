@@ -6,9 +6,9 @@
 
 get_header(); ?>
 </div><!-- .header-wrap -->
-<div id="primary" class="article-wrap">
+<main id="site-content" role="main" class="article-wrap">
 	
-    <article class="" role="main">
+    <article class="">
 
 		<header class="page-header">
 			<h1 class="archive-title">
@@ -92,5 +92,6 @@ get_header(); ?>
         <?php endif; ?>
         
 	</article> <!-- .blog-content -->
-		
+	
+</main>
 <?php get_footer(); ?>
