@@ -23,7 +23,7 @@ section.footer-company-info { /* --------- Contact Info Footer --------- */
 .footer-company-info {
 	li {
 		width: 100%;
-		font-size: $font12;
+		font-size: $font14;
 		display: block;
 		float: left;
 		list-style: none;
@@ -32,7 +32,7 @@ section.footer-company-info { /* --------- Contact Info Footer --------- */
 		color: $tan;
 	}
 	.name {
-		font-size: $font12;
+		font-size: $font14;
 		text-transform: uppercase;
 		padding-bottom: 1%;
 		border-bottom: 1px solid darken($tan,40%);
@@ -96,7 +96,7 @@ section.footer-navigation { /* --------- Navigation Footer --------- */
 			display: block;
 		}
 		.nav-text {
-			font-size: $font11;
+			font-size: $font14;
 		}
 		&:hover {
 			background-color: rgba(0,0,0,0.4);
@@ -130,7 +130,6 @@ section.footer-navigation { /* --------- Navigation Footer --------- */
 				margin-right: 4px;
 			}
 			.nav-text {
-				font-size: $font14;
 				vertical-align: super;
 			}
 		}
@@ -145,7 +144,7 @@ section.footer-social-links { /* --------- Social Footer --------- */
 	text-align: center;
 	margin: 0;
 	h4 {
-		font-size: $font11;
+		font-size: $font14;
 		text-transform: uppercase;
 		padding-bottom: 1%;
 	}
@@ -201,7 +200,7 @@ section.footer-social-links { /* --------- Social Footer --------- */
 
 .copyright {
 	width: 100%;
-	font-size: 0.625rem; /* 8px */
+	font-size: $font12;
 	text-align: center;
 	padding-top: $base;
 	clear: both;

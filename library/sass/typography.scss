@@ -32,7 +32,7 @@
 h2, h3, h4, h5, h6 {
 	@include square-font;
 	line-height: 1em;
-	margin: 0 0 ($base/2) 0;
+	margin: 0 0 ($base / 2) 0;
 }
 
 h2, h3 { text-shadow: 0 1px white; }
@@ -40,9 +40,9 @@ h2 { font-size: 2em; }
 .h2-small { font-size: $font12; }
 h2.indent { padding-left: 1em; }
 h3 { font-size: $font20; }
-p { font-size: $font16; line-height: 1.6; }
-p.space { margin-bottom: ($base*2); }
-p.space-columns { margin-bottom: ($base*2); }
+p { font-size: $font16; line-height: 1.8; }
+p.space { margin-bottom: ($base * 2); }
+p.space-columns { margin-bottom: ($base * 2); }
 .archive-title {
 	margin-bottom: $base;
 }

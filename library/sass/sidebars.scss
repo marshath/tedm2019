@@ -66,13 +66,13 @@ blockquote:before {
 .client-quotes {
 	padding-bottom: ($base *2);
 	p {
-		font-size: $font13;
+		font-size: $font14;
 		text-indent: 1.5em;
 		margin-bottom: 0;
 		z-index: 2;
 	}
 	cite {
-		font-size: 0.675rem;
+		font-size: $font12;
 		font-weight: bold;
 		margin-left: 1.5em;
 		&:before {
@@ -98,7 +98,7 @@ blockquote:before {
 }
 
 
-.work-services { /* --------- Services --------- */
+/* .work-services { // --------- Services ---------
 	padding-left: 2%;
 	padding-right: 2%;
 	border-right: 1px solid darken($tan,12%);
@@ -171,7 +171,7 @@ blockquote:before {
 		border-bottom: none;
 	}
 }
-
+ */
 
 
 /*---------------------------------- */
