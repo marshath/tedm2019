@@ -1,6 +1,6 @@
 
 	<aside class="client-quotes clearfix" role="secondary">
-		<h3><span class="testimonial-icon" aria-hidden="true" data-icon="&#xe01a;"></span> What My Clients Are Saying...</h3>
+		<h2><span class="testimonial-icon" aria-hidden="true" data-icon="&#xe01a;"></span> What My Clients Are Saying...</h2>
 		<div class="quotes">
 			<?php query_posts(array('post_type'=>'testimonials')); // ------- Display Testimonials ------- ?>
 			<?php $my1post = array( 'post_type' => 'testimonials' );
@@ -14,4 +14,4 @@
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>			
 		</div>
-	</aside> <!-- end .client-quotes -->
+	</aside> <!-- END .client-quotes -->

@@ -39,6 +39,7 @@ get_header(); ?>
 <div class="related-wrap">
 
 	<?php get_sidebar('project'); ?>
+	
 <?php // div ends in footer ?>
 <?php endwhile; ?>
 <?php get_footer(); ?>

@@ -26,12 +26,13 @@ div.quotes { /* --------- Customer Quotes --------- */
 }
 
 .client-quotes, .related-sites {
-	h3 {
+	h2 {
 		width: 100%;
 		font-size: 1.4em;
 		text-shadow: 0 1px white;
 		display: block;
 		vertical-align: middle;
+		margin-bottom: $base;
 		.us-icon, .testimonial-icon {
 			font-size: 1.4em;
 		}
@@ -42,7 +43,8 @@ div.quotes { /* --------- Customer Quotes --------- */
 }
 
 .related-sites h3 {
-	margin-bottom: $base;
+	margin-bottom: 0;
+	font-size: 1.4em;
 }
 
 blockquote:before {
@@ -62,6 +64,7 @@ blockquote:before {
 }
 
 .client-quotes {
+	padding-bottom: ($base *2);
 	p {
 		font-size: $font13;
 		text-indent: 1.5em;
@@ -87,13 +90,8 @@ blockquote:before {
 
 
 .related-sites li {
-	margin-bottom: 0;
-	@media screen and (max-width: $mobile-h) {
-		margin-bottom: $base;
-	}
-	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-		width:31.3%;
-		&:nth-child(4) {
+	@media screen and (min-width: $laptop) and (max-width: $computer-h) {
+		&:nth-child(4) {		// remove widow project when 3-up
 			display: none;
 		}
 	}
