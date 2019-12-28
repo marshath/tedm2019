@@ -23,25 +23,34 @@ get_header(); ?>
 	<article class="content clearfix" role="main">
 		<?php the_content(); ?>
 		<?php wp_reset_query(); ?>
+		
 		<ul class="project">
 			<?php query_posts(array('post_type'=>'project')); // ------- Display Projects ------- ?>
 			<?php $my3post = array( 'post_type' => 'project' );
 			$projloop = new WP_Query( $my3post ); ?>
 			<?php while ( $projloop->have_posts() ) : $projloop->the_post(); ?>
+			
 				<li>
+				
 					<a href="<?php the_permalink(); ?>">
 						<figure>
 							<?php the_post_thumbnail(); ?>
-							<figcaption>View details &raquo;</figcaption>
+							<div class="figslider">View details &raquo;</div>
 						</figure>
-						<?php edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
+						
 						<h3><?php the_title(); ?></h3>
 					</a>
+					<?php the_tags( '<p class="tags"><span class="tags-title">' . __( '', 'bonestheme' ) . '</span> ', '<span class="screen-reader-text">,</span> ', '</p>' ); ?>
+					<?php // the_excerpt() ?>
+					
+					<?php //edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
 
 				</li>
+				
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
 		</ul>
+		
 	</article><?php // ------- .content ------- ?>
 	
 </div> <?php // ------- .article-wrap ------- ?>

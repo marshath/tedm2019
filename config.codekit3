@@ -49,14 +49,6 @@
 		"oAP": "/archive.php",
 		"oF": 0
 		},
-	"/breadcrumb.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/breadcrumb.php",
-		"oF": 0
-		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,

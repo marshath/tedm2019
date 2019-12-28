@@ -143,7 +143,6 @@ $television: 1200px;
 .clearfix:after, .clear { clear: both; }
 
 
-
 /* -------------------------- */
 /* Page Containers */
 /* -------------------------- */
@@ -334,7 +333,8 @@ aside.services { /* --------- Sidebar Services --------- */
 		padding-right: 0;
 	}
 	.site-header, article, aside.services, aside.client-quotes, aside.related-sites, .site-footer, .page-id-16 article, .body-content {
-		width: 980px;
+		width: 80%;
+		max-width: 1280px;
 		margin-left: auto;
 		margin-right: auto;
 	}
