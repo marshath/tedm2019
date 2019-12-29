@@ -60,13 +60,13 @@ $television: 1200px;
 /* -------------------------- */
 
 @mixin square-font {
-	font-family: "bree-serif-1";
+	font-family: 'Bree Serif', serif;
 	font-style: normal;
 	font-weight: 400;
 }
 
 @mixin script-font {
-	font-family: "corner-store-1",sans-serif;
+	font-family: 'Oleo Script Swash Caps', cursive;
 }
 
 @mixin regular {

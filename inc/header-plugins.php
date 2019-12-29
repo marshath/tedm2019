@@ -1,5 +1,4 @@
 <?php //------------ Header Plugins --------------// 
 	
-//--------- Typekit ---------// ?>
-<script type="text/javascript" src="//use.typekit.net/txy8kqp.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+//--------- Google Fonts ---------// ?>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
