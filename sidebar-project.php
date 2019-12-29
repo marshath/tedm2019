@@ -16,7 +16,7 @@
 		                </figure>
 		                <h3><?php the_title(); ?></h3>
 	                </a>
-					<?php the_tags( '<p class="tags"><span class="tags-title">' . __( '', 'bonestheme' ) . '</span> ', '<span class="screen-reader-text">,</span> ', '</p>' ); ?>
+					<?php the_tags( '<p class="tags"><span class="tags-title screen-reader-text">' . __( 'Tags:', 'bonestheme' ) . '</span> ', '<span class="screen-reader-text">,</span> ', '</p>' ); ?>
 	            </li>
 	            
 			<?php endwhile; ?>

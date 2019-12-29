@@ -33,14 +33,6 @@
 		"oAP": "/archive-movie.php",
 		"oF": 0
 		},
-	"/archive-project.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/archive-project.php",
-		"oF": 0
-		},
 	"/archive.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2367,14 +2359,6 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/sidebar-page.php",
-		"oF": 0
-		},
-	"/sidebar-portfolio.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/sidebar-portfolio.php",
 		"oF": 0
 		},
 	"/sidebar-project.php": {

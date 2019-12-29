@@ -37,10 +37,9 @@ get_header(); ?>
 							<?php the_post_thumbnail(); ?>
 							<div class="figslider">View details &raquo;</div>
 						</figure>
-						
 						<h3><?php the_title(); ?></h3>
 					</a>
-					<?php the_tags( '<p class="tags"><span class="tags-title">' . __( '', 'bonestheme' ) . '</span> ', '<span class="screen-reader-text">,</span> ', '</p>' ); ?>
+					<?php the_tags( '<p class="tags"><span class="tags-title screen-reader-text">' . __( 'Tags:', 'bonestheme' ) . '</span> ', '<span class="screen-reader-text">,</span> ', '</p>' ); ?>
 					<?php // the_excerpt() ?>
 					
 					<?php //edit_post_link( __( 'Edit' ), '<span class="edit-link">', '</span>' ); ?>
