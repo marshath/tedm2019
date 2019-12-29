@@ -98,7 +98,7 @@ h1.logo { /* --------- Company Logo --------- */
 		}
 	}
 	.page-item-21 a:before, .page-item-1110 a:before, .page-item-1108 a:before, .page-item-19 a:before {
-		font-family: '33-icons';
+		font-family: 'ted-icons';
 		speak: none;
 		color: $nav-text;
 		font-style: normal;
@@ -111,16 +111,16 @@ h1.logo { /* --------- Company Logo --------- */
 		padding-bottom: 4px;
 	}
 	.page-item-21 a:before {
-		content: '\e001';
+		content: '\e90f';
 	}
 	.page-item-1110 a:before {
-		content: '\e002';
+		content: '\e900';
 	}
 	.page-item-1108 a:before {
-		content: '\e01a';
+		content: '\e90d';
 	}
 	.page-item-19 a:before {
-		content: '\e003';
+		content: '\e903';
 	}
 	.page-item-21 a:hover::before, .page-item-1110 a:hover::before, .page-item-1108 a:hover::before, .page-item-19 a:hover::before, .page-item-21.current_page_item a:before, .page-item-1110.current_page_item a:before, .page-item-1108.current_page_item a:before, .page-item-19.current_page_item a:before {
 		color: $yellow;

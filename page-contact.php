@@ -12,7 +12,7 @@ get_header(); ?>
 	<div class="body-content clearfix">
 	
 		<div class="contact-page">
-			<h2><span class="services-icon" aria-hidden="true" data-icon="&#xe003;"></span> Contact</h2>
+			<h2><span class="services-icon" aria-hidden="true" data-icon="&#xe903;"></span> Contact</h2>
 			<?php the_content(); ?>
 		</div>
 

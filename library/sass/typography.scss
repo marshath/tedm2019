@@ -5,18 +5,18 @@
 /* -------------------------- */
 
 @font-face {
-	font-family: '33-icons';
-	src:url('library/fonts/33-icons.eot');
-	src:url('library/fonts/33-icons.eot?#iefix') format('embedded-opentype'),
-		url('library/fonts/33-icons.woff') format('woff'),
-		url('library/fonts/33-icons.ttf') format('truetype'),
-		url('library/fonts/33-icons.svg#33-icons') format('svg');
+	font-family: 'ted-icons';
+	src:url('library/fonts/ted-icons.eot');
+	src:url('library/fonts/ted-icons.eot?#iefix') format('embedded-opentype'),
+		url('library/fonts/ted-icons.woff') format('woff'),
+		url('library/fonts/ted-icons.ttf') format('truetype'),
+		url('library/fonts/ted-icons.svg#ted-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [data-icon]:before {
-	font-family: '33-icons';
+	font-family: 'ted-icons';
 	content: attr(data-icon);
 	speak: none;
 	font-weight: normal;
@@ -47,7 +47,6 @@ p.space-columns { margin-bottom: ($base * 2); }
 	margin-bottom: $base;
 }
 
-
 hr {
 	border: none;
 	border-bottom: $line;
@@ -59,15 +58,12 @@ hr {
 	line-height: 1em;
 }
 
-
-
 ::selection { background: $orange-light; }
 
 .screen-reader-text {
 	display: none;
 }
 	
-
 
 /* -------------------------- */
 /* Global Links */
@@ -104,10 +100,7 @@ a.primary-btn, .wpcf7-form .wpcf7-submit, .sidebar-mc-form .button { /* --------
 
 a.secondary-btn, .sidebar-mc-form .button2 { /* --------- Secondary Button --------- */
 	background-color: $gray-light-alpha;
-	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, $gray-light-alpha), color-stop(1, $gray-dark-alpha) );
-	background: -moz-linear-gradient( center top, $gray-light-alpha 5%, $gray-dark-alpha 100% );
-	background: -o-linear-gradient( center top, $gray-light-alpha 5%, $gray-dark-alpha 100% );
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#d1d0cf');
+	background: linear-gradient( to bottom, $gray-light-alpha 0.05, $gray-dark-alpha 1 );
 	color: lighten($text,20%);
 	padding: ($base/2) $base;
 	display: inline-block;
@@ -116,9 +109,7 @@ a.secondary-btn, .sidebar-mc-form .button2 { /* --------- Secondary Button -----
 	box-shadow: inset 0px 1px 2px white, inset 0px -1px 1px darken($tan,4), 0px 1px 1px white;
 	&:hover {
 		background-color: $gray-dark-alpha;
-		background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, $gray-dark-alpha), color-stop(1, $gray-light-alpha) );
-		background: -moz-linear-gradient( center top, $gray-dark-alpha 5%, $gray-light-alpha 100% );
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1d0cf', endColorstr='#ededed');
+		background: linear-gradient( to bottom, $gray-dark-alpha 0.05, $gray-light-alpha 1 );
 		color: $text;
 		box-shadow: inset 0px -1px 2px white, 0px 1px 1px white;
 	}

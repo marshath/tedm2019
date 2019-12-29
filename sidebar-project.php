@@ -1,6 +1,6 @@
 
 	<aside class="related-sites clearfix" role="secondary">
-		<h2><span class="related-sites-icon" aria-hidden="true" data-icon="&#xe019;"></span> More Sweet Projects...</h2>
+		<h2><span class="related-sites-icon" aria-hidden="true" data-icon="&#xe90c;"></span> More Sweet Projects...</h2>
 		
 		<ul class="project">
 			<?php query_posts(array('post_type' => 'project')); ?>

@@ -14,6 +14,7 @@ div.quotes { /* --------- Customer Quotes --------- */
 	margin: 0 0 0 2%;
 	float: left;
 	position: relative;
+	z-index: 1;
 	@media screen and (max-width: $mobile-h) {
 		width: 100%;
 	}
@@ -48,14 +49,14 @@ div.quotes { /* --------- Customer Quotes --------- */
 }
 
 blockquote:before {
-	font-family: '33-icons';
+	font-family: 'ted-icons';
 	speak: none;
 	font-style: normal;
 	font-size: 1.5em;
 	font-weight: normal;
 	line-height: 1;
 	@include font-smoothing(antialiased);
-	content: '\e01b';
+	content: '\e90b';
 	color: darken($tan,1%);
 	position: absolute;
 	top: 0.125em;

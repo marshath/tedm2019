@@ -105,49 +105,15 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
-	"/library/fonts/33-icons.dev.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/library/fonts/demo.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 2,
-		"oAP": "/library/fonts/33-icons.dev.svg",
+		"oAP": "/library/fonts/demo-min.css",
 		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/library/fonts/33-icons.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/library/fonts/33-icons.eot",
-		"oF": 0
-		},
-	"/library/fonts/33-icons.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/library/fonts/33-icons.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/library/fonts/33-icons.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/library/fonts/33-icons.ttf",
-		"oF": 0
-		},
-	"/library/fonts/33-icons.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/library/fonts/33-icons.woff",
-		"oF": 0
+		"oS": 3
 		},
 	"/library/fonts/index.html": {
 		"cB": 0,
@@ -157,17 +123,6 @@
 		"oAP": "/library/fonts/index.html",
 		"oF": 0
 		},
-	"/library/fonts/lte-ie7.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/library/fonts/min/lte-ie7-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/library/fonts/Read Me.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -175,16 +130,6 @@
 		"oA": 2,
 		"oAP": "/library/fonts/Read Me.txt",
 		"oF": 0
-		},
-	"/library/fonts/style-min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "/library/fonts/style-min-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/library/fonts/style.css": {
 		"aP": 0,
@@ -195,6 +140,40 @@
 		"oAP": "/library/fonts/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/library/fonts/ted-icons.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/library/fonts/ted-icons.eot",
+		"oF": 0
+		},
+	"/library/fonts/ted-icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/library/fonts/ted-icons.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/library/fonts/ted-icons.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/library/fonts/ted-icons.ttf",
+		"oF": 0
+		},
+	"/library/fonts/ted-icons.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/library/fonts/ted-icons.woff",
+		"oF": 0
 		},
 	"/library/images/apple-touch-icon.png": {
 		"ft": 32768,
