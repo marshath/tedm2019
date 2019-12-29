@@ -25,8 +25,11 @@ get_header(); ?>
 		<?php wp_reset_query(); ?>
 		
 		<ul class="project">
-			<?php query_posts(array('post_type'=>'project')); // ------- Display Projects ------- ?>
-			<?php $my3post = array( 'post_type' => 'project' );
+			<?php $my3post = array( 
+				'post_type' => 'project',
+				'category_name' => 'featured', 
+				'orderby' => 'rand' 
+				);
 			$projloop = new WP_Query( $my3post ); ?>
 			<?php while ( $projloop->have_posts() ) : $projloop->the_post(); ?>
 			

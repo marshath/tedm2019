@@ -3,8 +3,7 @@
 		<h2><span class="related-sites-icon" aria-hidden="true" data-icon="&#xe90c;"></span> More Sweet Projects...</h2>
 		
 		<ul class="project">
-			<?php query_posts(array('post_type' => 'project')); ?>
-			<?php $my4post = array( 'post_type' => 'project', 'posts_per_page' => 4, 'cat' => 'Featured', 'orderby' => 'rand' );
+			<?php $my4post = array( 'post_type' => 'project', 'posts_per_page' => 4, 'category_name' => 'featured', 'orderby' => 'rand' );
 			$projloop = new WP_Query( $my4post ); ?>
 			<?php while ( $projloop->have_posts() ) : $projloop->the_post(); ?>
 			

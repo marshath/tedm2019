@@ -20,25 +20,25 @@ get_header(); ?>
 						printf( __( 'Yearly Archives: %s' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format' ) ) . '</span>' );
 
 					elseif ( is_tag('adverts') ) :
-						printf( __( 'Tag: Adverts' ), '<span>' );
+						printf( __( 'Advertisements' ), '<span>' );
 					elseif ( is_tag('branding') ) :
-						printf( __( 'Tag: Branding' ), '<span>' );
+						printf( __( 'Branding' ), '<span>' );
 					elseif ( is_tag('automotive') ) :
-						printf( __( 'Tag: Automotive' ), '<span>' );
+						printf( __( 'Automotive Instrumentation' ), '<span>' );
 					elseif ( is_tag('logo') ) :
-						printf( __( 'Tag: Logo' ), '<span>' );
+						printf( __( 'Logo Design' ), '<span>' );
 					elseif ( is_tag('print') ) :
-						printf( __( 'Tag: Print' ), '<span>' );
+						printf( __( 'Print Design' ), '<span>' );
 					elseif ( is_tag('software') ) :
-						printf( __( 'Tag: Software' ), '<span>' );
+						printf( __( 'Software Design' ), '<span>' );
 					elseif ( is_tag('video') ) :
-						printf( __( 'Tag: Video' ), '<span>' );
+						printf( __( 'Video Production' ), '<span>' );
 					elseif ( is_tag('website') ) :
-						printf( __( 'Tag: Website' ), '<span>' );
+						printf( __( 'Website Design & Development' ), '<span>' );
 					elseif ( is_tag('ui') ) :
-						printf( __( 'Tag: UI' ), '<span>' );
+						printf( __( 'UI: User Interface Design' ), '<span>' );
 					elseif ( is_tag('ux') ) :
-						printf( __( 'Tag: UX' ), '<span>' );
+						printf( __( 'UX: User Experience Design' ), '<span>' );
 						
 					else :
 						_e( 'Archives' );
