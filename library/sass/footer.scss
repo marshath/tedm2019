@@ -137,44 +137,40 @@ section.footer-navigation { /* --------- Navigation Footer --------- */
 }
 
 
-
 section.footer-social-links { /* --------- Social Footer --------- */
-	width: 23%;
-	margin-top: ($base/2);
+	width: 23%;					// set max width for desktop
+	margin-top: ($base/2);		// push down to vertially center
 	text-align: center;
-	margin: 0;
 	h4 {
 		font-size: $font14;
 		text-transform: uppercase;
-		padding-bottom: 1%;
+		padding-bottom: 1%;				// push line below down from text
 	}
 	@media screen and (max-width: $mobile-h) {
-		width: 70%;
-		margin-left: 15%;
-		margin-bottom: $base;
+		width: 70%;						// set max width 70%
+		margin-left: 15%;				// align center (30%/2=15)
+		//margin-bottom: $base;
 	}
 	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-		text-align: left;
-		width: 48%;
+		text-align: left;				// align icons & h4 text left on tablet
+		width: 48%;						// set max width 48% + 2% spacing
 		h4 {
 			border-bottom: 1px solid darken($tan,40%);
-			text-align: left;
 		}
 	}
 }
 
 
-
 .footer-social-links {
+	ul {
+		display: flex;
+		flex-flow: row nowrap;
+		margin: auto;
+		width: 100%;
+	}
 	li {
-		width: 21%;
-		margin: 0 2%;
-		float: left;
+		flex-basis: 20%;
 		list-style: none;
-		@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-			width: 3em;
-			margin: 0;
-		}
 	}
 	.social-text {
 		display: none;
@@ -191,7 +187,6 @@ section.footer-social-links { /* --------- Social Footer --------- */
 		}
 	}
 }
-
 
 
 /* -------------------------- */

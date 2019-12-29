@@ -100,7 +100,6 @@
 }
 
 
-
 .home-text { /* --------- Homepage Text --------- */
 	width: 100%;
 	margin-bottom: $base;
@@ -123,42 +122,6 @@
 	}
 }
 
-/* .services-home {
-	width: 100%;
-	height: ($base*4.5);
-	margin: 0;
-	display: inline-block;
-	margin: 0 0 0 -1%;
-	padding-left: 0;
-	list-style: none;
-	li {
-		width: 23%;		
-		@include square-font;
-		text-decoration: none;
-		text-transform: uppercase;
-		text-align: center;
-		padding: ($base/2) 0;
-		margin: 0 1%;
-		display: inline-block;
-		float: left;
-		.services-home-icon {
-			font-size: 1.2em;
-			display: block;
-		}
-		.services-home-text {
-			font-size: $font12;
-		}
-		a {
-			width: 100%;
-			padding: ($base/2) 0;
-		}
-	}
-	@media screen and (max-width: $tablet-h) {
-		margin-left: 0;
-	}
-} */
-
-
 
 .contact { /* --------- Contact --------- */
 	background: $contact-light; /* Old browsers */
@@ -170,19 +133,19 @@
 
 
 .page-id-239 ul.social, .sidebar-social-links { /* --------- Social Links --------- */
-	margin-right: 3%;
 	ul {
-		padding-left:0;
-		display: block;
-		height: ($base*3.75);
+		display: flex;
+		flex-flow: row nowrap;
+		padding-left:0;		// remove default list padding
+		list-style: none;
+		width: 96%;
+		max-width: 400px;
+		margin: auto;
 	}
 	li {
-		width: 21%;
-		margin: 0 2%;
-		float: left;
-		list-style: none;
+		flex-basis: 20%;
 	}
-	.twitter-icon, .facebook-icon, .google-icon, .rss-icon, .pinterest-icon, .linkedin-icon {
+	.twitter-icon, .codepen-icon, .github-icon, .rss-icon, .pinterest-icon, .linkedin-icon {
 		font-size: 2.5em;
 		display: block;
 	}
@@ -192,22 +155,17 @@
 	}
 	a {
 		text-align: center;
-		margin-bottom: 10px;
-		display: block;
 		&:hover {
 			color: $text;
 		}
 		&:hover .twitter-icon {
 			color: $twitter-blue;
 		}
-		&:hover .facebook-icon {
-			color: $facebook-blue;
+		&:hover .github-icon {
+			color: $github-black;
 		}
-		&:hover .google-icon {
-			color: $google-red;
-		}
-		&:hover .rss-icon {
-			color: $rss-orange;
+		&:hover .codepen-icon {
+			color: $codepen-yellow;
 		}
 		&:hover .pinterest-icon {
 			color: $pinterest-red;
@@ -217,7 +175,6 @@
 		}
 	}
 }
-
 .center {
 	text-align: center;
 	margin-bottom: ($base*2);

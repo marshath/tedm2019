@@ -99,82 +99,6 @@ blockquote:before {
 }
 
 
-/* .work-services { // --------- Services ---------
-	padding-left: 2%;
-	padding-right: 2%;
-	border-right: 1px solid darken($tan,12%);
-	border-left: 1px solid lighten($tan,15%);
-	h3 {
-		font-size: 1.4em;
-		margin-bottom: $base;
-		text-shadow: 0 1px white;
-	}
-	.services-img {
-		width: 100%;
-		height: 126px;
-		margin-bottom: $base;
-		display: block;
-		border: 0.2em solid white;
-		@include box-shadow(0 2px 2px rgba(0,0,0,0.3));
-		overflow: hidden;
-	}
-	.secondary-btn {
-		margin-bottom: 0;
-	}
-	@media screen and (max-width: $mobile-h) {
-		padding: $base 0 0;
-		border-left: none;
-		border-right: none;
-		border-bottom: 1px solid darken($tan,12%);
-		border-top: 1px solid lighten($tan,20%);
-		&:first-child {
-			padding: 0;
-		}
-		.secondary-btn {
-			margin-top: 0;
-			margin-bottom: $base;
-		}
-	}
-	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-		padding: $base 0 0;
-		border-left: none;
-		border-right: none;
-		border-bottom: 1px solid darken($tan,12%);
-		border-top: 1px solid lighten($tan,20%);
-		.services-img {
-			width: 48%;
-			margin-right: 2%;
-			margin-bottom: 50px;
-			float: left;
-		}
-		p {
-			width: 48%;
-			margin-top: 0;
-			float: right;
-		}
-		.secondary-btn {
-			margin-top: 0;
-			margin-bottom: $base;
-		}
-	}
-}
-
-.work-services:first-child {
-	border-left: none;
-	@media screen and (max-width: $tablet-h) {
-		border-top: none;
-	}
-}
-
-.work-services:nth-child(3) {
-	border-right: none;
-	@media screen and (max-width: $tablet-h) {
-		border-bottom: none;
-	}
-}
- */
-
-
 /*---------------------------------- */
 /*----------    Sidebar   -----------*/
 /*---------------------------------- */
@@ -214,22 +138,3 @@ blockquote:before {
 		margin-right: 2%;
 	}
 }
-
-.sidebar-social-boxes {
-	width: 100%;
-	text-align: center;
-	padding: ($base*0.25) 0 ($base*1.25);
-}
-
-@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-	.sidebar-tablet-f1 {
-		width: 50%;
-		float: left;
-	}
-	.sidebar-tablet-f2 {
-		width: 50%;
-		float: left;
-		margin-bottom: $base;
-	}
-}
-
