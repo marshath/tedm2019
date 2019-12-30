@@ -199,7 +199,7 @@
 /* Work Page Elements */
 /* -------------------------- */
 
-.work-text {
+/* .work-text {
 	width: 100%;
 	figure {
 		background: lighten($tan,25);
@@ -259,7 +259,7 @@
 			width: 48%;
 		}
 	}
-}
+} */
 
 h3.large {
 	padding-top: 5px;
@@ -288,8 +288,8 @@ h3.large {
 					color: $text;
 				}
 				figure {
-					@include scale(1.05);
-					@include box-shadow(12px 18px 18px rgba(0,0,0,0.4));
+					@include scale(1.02);
+					@include box-shadow(2px 5px 10px rgba(0,0,0,0.3));
 					border-color: $orange;
 					.figslider {
 						margin-top: 0;
@@ -303,6 +303,7 @@ h3.large {
 		height: ($base*10);
 		border: 0.4em solid white;
 		margin-bottom: $base;
+		border-radius: 0.3em;
 		@include box-shadow(0 1px 2px rgba(0,0,0,0.5));
 		overflow: hidden;
 		@include transition(all, 0.15s, ease-out);
@@ -356,7 +357,7 @@ h3.large {
 }
 
 
-@media screen and (min-width: $laptop) {
+/* @media screen and (min-width: $laptop) {
 	.website-project {
 		width: 65%;
 		margin-top: 0;
@@ -370,7 +371,7 @@ h3.large {
 			}
 		}
 	}
-}
+} */
 
 
 
