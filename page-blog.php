@@ -15,7 +15,6 @@ get_header(); ?>
 		<div class="contact-page">
 			<h2><span class="services-icon" aria-hidden="true" data-icon="&#xe90d"></span> Blog</h2>
 			<?php the_content(); ?>
-			<br>
 			<a href="http://33degreesds.com/blog/" rel="bookmark" class="secondary-btn">View all blog posts <span class="arrow_btn" aria-hidden="true" data-icon="&#xe901;"></span></a>
 			<p>&nbsp;</p>
 		</div>

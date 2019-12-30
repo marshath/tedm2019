@@ -397,34 +397,6 @@ h3.large {
 }
 
 
-
-/* --------- Breadcrumb Links --------- */
-.crumb {
-	width:60%;
-	color: $orange;
-	font-size: $font11;
-	margin-bottom: ($base*2);
-	@media screen and (max-width: $tablet-h) {
-		width: 100%;
-	}
-	ul {
-		padding-left: 0;
-	}
-	li {
-		list-style: none;
-		float: left;
-		margin-right: 4px;
-	}
-	a {
-		color: lighten($text,40%);
-		&:hover {
-			color: $text;
-		}
-	}
-}
-
-
-
 /* -------------------------- */
 /* About Page Elements */
 /* -------------------------- */
@@ -454,28 +426,61 @@ h3.large {
 /* Blog Elements */
 /* -------------------------- */
 
-.wprssmi-cs-items .title {
-	width: 100%;
-	@include square-font;
-	font-weight: normal;
-	display: inline-block;
-	margin: 0 0 0.3em;
-	padding-bottom: 0.3em;
-	border-bottom: $line;
-	span {
-		display: none;
-	}
-	a {
-		font-size: 1.4rem;
-		color: $text;
-		&:hover {
-			background: none;
-			color: $orange;
+ul.blogroll {
+	display: flex;
+	flex-flow: column nowrap;
+	padding-left: 0;		// remove default list padding
+	list-style: none;
+	li {
+		flex-basis: 100%;		// set full width
+		padding: 0;		// spacing between projects
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		a {
+			display: flex;
+			flex-flow: row nowrap;
+			color: $text;
+			margin-bottom: ($base/2);			// spacing between blog posts
+			&:hover {
+				color: $orange;
+				p {
+					color: $text;
+				}
+				figure {
+					@include scale(1.02);
+					@include box-shadow(1px 3px 5px rgba(0,0,0,0.3));
+					border-color: $orange;
+				}
+			}
 		}
 	}
+	figure {
+		flex-basis: 20%;
+		border: 0.2em solid white;
+		border-radius: 0.3em;
+		@include box-shadow(0 1px 2px rgba(0,0,0,0.5));
+		overflow: hidden;
+		@include transition(all, 0.15s, ease-out);
+	}
+	figcaption {
+		flex-basis: 80%;
+		align-self: center;				// vertically align text center
+		padding-left: 1em;
+		font-size: $font16;
+	}
+	@media screen and (min-width: $tablet-v) {
+		figcaption {
+			font-size: $font18;
+		}	
+	}
+	@media screen and (min-width: $laptop) {
+		figcaption {
+			font-size: $font20;
+		}	
+	}
 }
-
-
 
 
 /* -------------------------- */
