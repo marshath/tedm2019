@@ -13,7 +13,16 @@ get_header(); ?>
 				<h1>Designer&nbsp;and Web&nbsp;Developer</h1>
 				<h2>Front-end design and development has been my passion for over fifteen years. I have matured with the industry as it has grown into the standards that we all adhere to today.</h2>
 			</figcaption>
-			<div class="hero-computers"><img src="<?php echo get_template_directory_uri(); ?>/library/images/chart-home.png" /></div>
+			<div class="hero-computers">
+				<img 
+				src="<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-650.png"
+				alt="Laptop, tablet and smartphone design with a personal touch" 
+				srcset="<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-325.png 325w, 
+				<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-650.png 650w, 
+				<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-975.png 975w, 
+				<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-1300.png 1300w" 
+				sizes="(min-width: 325px) 50vw, (min-width: 650px) 100vw, 100vw">
+			</div>
 		</figure>
     </section>
 
