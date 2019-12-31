@@ -4,7 +4,7 @@
 	outline: none;
 }
 
-.flex-section-container {
+.flex-project-container { /* Project images */
 	width: 60%;
 	border: 1px solid #999;
 	box-sizing: border-box;
@@ -21,13 +21,17 @@
 	}
 }
 
+.flex-testimonial-container { /* Testimonial quotes */
+	width: 100%;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
 .slides, .flex-control-nav, .flex-direction-nav {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 } 
-
-
 
 .flexslider { /* ---------- FlexSlider Necessary Styles ---------- */ 
 	margin: 0;
@@ -45,8 +49,6 @@
 .flex-pauseplay span {
 	text-transform: capitalize;
 }
-
-
 
 .slides:after { /* Clearfix for the .slides element */
 	content: "."; 
@@ -81,9 +83,7 @@ html[xmlns] .slides {
 }
 
 .flex-viewport {
-	max-height: 2000px; 
-	-webkit-transition: all 1s ease; 
-	-moz-transition: all 1s ease; 
+	max-height: 2000px;
 	transition: all 1s ease;
 }
 
@@ -105,123 +105,130 @@ html[xmlns] .slides {
 	*height: 0; 
 }
 
-.flex-direction-nav a {
-	width: 30px; 
-	height: 20%; 
-	margin: -60% 0 0;
-	display: block; 
-	background: url(library/images/bg_direction_nav.png) no-repeat 0 0 rgba(255,255,255,0.9);
-	position: absolute; 
-	z-index: 10;
-	cursor: pointer; 
-	text-indent: -9999px; 
-	opacity: 0; 
-	@include transition(all, .3s, ease);
+.flex-project-container {
+	.flex-direction-nav a {		// project navigation 
+		width: 30px; 
+		height: 20%; 
+		margin: -60% 0 0;
+		display: block; 
+		background: url(library/images/bg_direction_nav.png) no-repeat 0 0 rgba(255,255,255,0.9);
+		position: absolute; 
+		z-index: 10;
+		cursor: pointer; 
+		text-indent: -9999px; 
+		opacity: 0; 
+		@include transition(all, .3s, ease);
+	}
+
+	.flex-direction-nav .flex-next {
+		background-position: 100% 50%;
+		right: -36px; 
+	}
+
+	.flex-direction-nav .flex-prev {
+		background-position: 0% 50%;
+		left: -36px;
+	}
+	
+	.flexslider:hover .flex-next {
+		opacity: 0.8; 
+		right: 5px;
+	}
+	
+	.flexslider:hover .flex-prev {
+		opacity: 0.8; 
+		left: 5px;
+	}
+	
+	.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+		opacity: 1;
+	}
+	
+	.flex-direction-nav .flex-disabled {
+		opacity: .3!important; 
+		filter:alpha(opacity=30); 
+		cursor: default;
+	}
+	.flex-control-nav { /* --------- Control Nav --------- */
+		width: 100%; 
+		position: absolute; 
+		bottom: -30px; 
+		text-align: center;
+	}
+	
+	.flex-control-nav li {
+		margin: 0 4px; 
+		display: inline-block; 
+		zoom: 1; 
+		*display: inline;
+	}
+	
+	.flex-control-paging li a {
+		width: 50px; 
+		height: 6px; 
+		display: block; 
+		background: white; 
+		cursor: pointer;
+		text-indent: -9999px;
+		@include box-shadow(0 1px 1px rgba(0,0,0,0.5));
+	}
+	
+	.flex-control-paging li a:hover { 
+		background: #333; 
+		background: lighten($yellow,30%); 
+	}
+	
+	.flex-control-paging li a.flex-active { 
+		background: #000; 
+		background: $yellow; 
+		cursor: default; 
+	}
+	
+	.flex-control-thumbs {
+		margin: 5px 0 0; 
+		position: static; 
+		overflow: hidden;
+	}
+	
+	.flex-control-thumbs li {
+		width: 25%; 
+		float: left; 
+		margin: 0;
+	}
+	
+	.flex-control-thumbs img {
+		width: 100%; 
+		display: block; 
+		opacity: .7; 
+		cursor: pointer;
+	}
+	
+	.flex-control-thumbs img:hover {
+		opacity: 1;
+	}
+	
+	.flex-control-thumbs .flex-active {
+		opacity: 1; 
+		cursor: default;
+	}
+	@media screen and (max-width: $tablet-h) {
+		.flex-direction-nav .flex-prev {
+			opacity: 0; 
+			left: 0;
+		}
+		.flex-direction-nav .flex-next {
+			opacity: 0; 
+			right: 0;
+		}
+	}
 }
-
-.flex-direction-nav .flex-next {
-	background-position: 100% 50%;
-	right: -36px; 
-}
-
-.flex-direction-nav .flex-prev {
-	background-position: 0% 50%;
-	left: -36px;
-}
-
-.flexslider:hover .flex-next {
-	opacity: 0.8; 
-	right: 5px;
-}
-
-.flexslider:hover .flex-prev {
-	opacity: 0.8; 
-	left: 5px;
-}
-
-.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
-	opacity: 1;
-}
-
-.flex-direction-nav .flex-disabled {
-	opacity: .3!important; 
-	filter:alpha(opacity=30); 
-	cursor: default;
-}
-
-
-
-.flex-control-nav { /* --------- Control Nav --------- */
-	width: 100%; 
-	position: absolute; 
-	bottom: -30px; 
-	text-align: center;
-}
-
-.flex-control-nav li {
-	margin: 0 4px; 
-	display: inline-block; 
-	zoom: 1; 
-	*display: inline;
-}
-
-.flex-control-paging li a {
-	width: 50px; 
-	height: 6px; 
-	display: block; 
-	background: white; 
-	cursor: pointer;
-	text-indent: -9999px;
-	@include box-shadow(0 1px 1px rgba(0,0,0,0.5));
-}
-
-.flex-control-paging li a:hover { 
-	background: #333; 
-	background: lighten($yellow,30%); 
-}
-
-.flex-control-paging li a.flex-active { 
-	background: #000; 
-	background: $yellow; 
-	cursor: default; 
-}
-
-.flex-control-thumbs {
-	margin: 5px 0 0; 
-	position: static; 
-	overflow: hidden;
-}
-
-.flex-control-thumbs li {
-	width: 25%; 
-	float: left; 
-	margin: 0;
-}
-
-.flex-control-thumbs img {
-	width: 100%; 
-	display: block; 
-	opacity: .7; 
-	cursor: pointer;
-}
-
-.flex-control-thumbs img:hover {
-	opacity: 1;
-}
-
-.flex-control-thumbs .flex-active {
-	opacity: 1; 
-	cursor: default;
-}
-
-@media screen and (max-width: $tablet-h) {
-  .flex-direction-nav .flex-prev {
-	  opacity: 0; 
-	  left: 0;
-  }
-  
-  .flex-direction-nav .flex-next {
-	  opacity: 0; 
-	  right: 0;}
-  
+.flex-testimonial-container {
+	.flex-direction-nav a {			// testimonial navigation 
+		display: none;
+		height: 0;
+	}
+	.flex-control-nav { 			// Control Nav
+		display: none;
+		height: 0;
+	}
 }

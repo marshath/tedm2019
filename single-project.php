@@ -13,7 +13,7 @@ get_header(); ?>
     	
 		<h2><?php the_title(); ?></h2>
 		
-		<div class="flex-section-container">
+		<div class="flex-project-container">
 		    <div class="flexslider">
 		      <ul class="slides">
 				<?php $imagesTypes = get_post_meta($post->ID, 'project_image1'); { // displays project images

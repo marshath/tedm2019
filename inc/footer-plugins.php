@@ -2,7 +2,8 @@
 	
 //---------- Flexslider ---------// ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<?php if ( ($post->post_parent == '21') or (is_single()) ) { ?>
+
+<?php if ( (is_single()) or (is_page(1110)) ) { // if single project page, about page ?>
 	<script defer src="<?php echo get_template_directory_uri(); ?>/library/js/flexslider/jquery.flexslider.js"></script>
 	<script type="text/javascript">
 	$(window).load(function(){

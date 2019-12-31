@@ -10,20 +10,10 @@ div.quotes { /* --------- Customer Quotes --------- */
 	margin-left: -2%;
 }
 .testimonial {
-	width: 31%;
 	margin: 0 0 0 2%;
 	float: left;
 	position: relative;
 	z-index: 1;
-	@media screen and (max-width: $mobile-h) {
-		width: 100%;
-	}
-	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-		width: 48%;
-		blockquote:last-child {
-			display: none;
-		}
-	}
 }
 
 .client-quotes, .related-sites {
@@ -42,40 +32,36 @@ div.quotes { /* --------- Customer Quotes --------- */
 		}
 	}
 }
-
 .related-sites h3 {
 	margin-bottom: 0;
 	font-size: 1.4em;
 }
-
 blockquote:before {
 	font-family: 'ted-icons';
 	speak: none;
 	font-style: normal;
-	font-size: 1.5em;
-	font-weight: normal;
-	line-height: 1;
+	font-size: 1.8em;
 	@include font-smoothing(antialiased);
 	content: '\e90b';
 	color: darken($tan,1%);
 	position: absolute;
-	top: 0.125em;
-	left: 0;
 	z-index: -1;
+}
+blockquote:before {
+	top: 0.25em;
+	left: 0;
 }
 
 .client-quotes {
 	padding-bottom: ($base *2);
 	p {
-		font-size: $font14;
 		text-indent: 1.5em;
-		margin-bottom: 0;
 		z-index: 2;
 	}
 	cite {
-		font-size: $font12;
+		font-size: $font14;
 		font-weight: bold;
-		margin-left: 1.5em;
+		margin-left: 2.5em;
 		&:before {
 			content: '—'
 		}
@@ -88,8 +74,27 @@ blockquote:before {
 		}
 	}
 }
-
-
+@keyframes heartbeat {	// used on the testimonial heart icon
+	from { font-size: 0.95em; }
+	25%  { font-size: 0.8em; }
+	50%  { font-size: 0.95em; }
+	75%  { font-size: 0.8em; }
+	to   { font-size: 0.95em; }
+}
+.client-heart {
+	width: 24px;
+	height: 16px;
+	display: inline-block;
+	text-align: center;
+	&-icon {
+		color: $orange;
+		animation: heartbeat 4s ease infinite;
+		transform-origin: center center;
+	}
+}
+.client-love {
+	@extend .screen-reader-text;
+}
 .related-sites li {
 	@media screen and (min-width: $laptop) and (max-width: $computer-h) {
 		&:nth-child(4) {		// remove widow project when 3-up
