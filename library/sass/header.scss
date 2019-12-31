@@ -17,8 +17,9 @@ h1.logo { /* --------- Company Logo --------- */
 		background: url(library/images/logo.png) no-repeat;
 		text-indent: -9999px;
 		display: block;
+		transition: all ease 0.2s;
 		&:hover {
-			@include scale(0.9);
+			@include scale(0.95);
 		}
 		@media screen and (min-device-pixel-ratio: 1.5) {
 			background: url(images/logo@2x.png) no-repeat;
@@ -92,7 +93,7 @@ h1.logo { /* --------- Company Logo --------- */
 		@include radius($corner);
 		@include transition(background, 1s, ease-out);
 		&:hover {
-			background-color: rgba(255,255,255,0.2);
+			background-color: rgba(255,255,255,0.1);
 			color: white;
 			@include transition(background, 0s, linear);
 		}
