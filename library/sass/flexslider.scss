@@ -11,6 +11,7 @@
 	margin-bottom: ($base*2);
 	display: inline-block;
 	float: left;
+	@include box-shadow(2px 5px 10px rgba(0,0,0,0.3));
 	@media screen and (max-width: $mobile-h) {
 		width: 100%;
 	}
@@ -109,7 +110,7 @@ html[xmlns] .slides {
 	.flex-direction-nav a {		// project navigation 
 		width: 30px; 
 		height: 20%; 
-		margin: -60% 0 0;
+		margin: -50% 0 0;
 		display: block; 
 		background: url(library/images/bg_direction_nav.png) no-repeat 0 0 rgba(255,255,255,0.9);
 		position: absolute; 
@@ -117,6 +118,7 @@ html[xmlns] .slides {
 		cursor: pointer; 
 		text-indent: -9999px; 
 		opacity: 0; 
+		border-radius: 4px;
 		@include transition(all, .3s, ease);
 	}
 
@@ -171,16 +173,17 @@ html[xmlns] .slides {
 		cursor: pointer;
 		text-indent: -9999px;
 		@include box-shadow(0 1px 1px rgba(0,0,0,0.5));
+		border-radius: 4px;
 	}
 	
 	.flex-control-paging li a:hover { 
 		background: #333; 
-		background: lighten($yellow,30%); 
+		background: linear-gradient( to right, $orange 0%, $orange-light 100%);
 	}
 	
 	.flex-control-paging li a.flex-active { 
 		background: #000; 
-		background: $yellow; 
+		background: $orange-light; 
 		cursor: default; 
 	}
 	
