@@ -10,8 +10,7 @@ get_header(); ?>
     <section class="hero-splash clearfix">
 		<figure>
 			<figcaption>
-				<h1>Designer&nbsp;and Web&nbsp;Developer</h1>
-				<h2>Front-end design and development has been my passion for over fifteen years. I have matured with the industry as it has grown into the standards that we all adhere to today.</h2>
+				<?php the_content(); ?>
 			</figcaption>
 			<div class="hero-computers">
 				<img 
@@ -30,7 +29,6 @@ get_header(); ?>
 <main id="site-content" role="main" class="article-wrap">
     
 	<article class="content clearfix">
-		<?php the_content(); ?>
 		<?php wp_reset_query(); ?>
 		
 		<ul class="project">
