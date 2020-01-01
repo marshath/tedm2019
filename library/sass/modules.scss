@@ -399,10 +399,8 @@ h3.large {
 }
 
 .project-desc p:first-child {
-	font-size: $font16;
 	font-weight: bold;
-	margin-top: 0;
-	line-height: 1.4;
+	margin-top: 0;				// remove top margin
 }
 
 
