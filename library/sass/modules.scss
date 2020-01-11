@@ -387,8 +387,7 @@ h3.large {
 /* -------------------------- */
 /* Project Page Elements */
 /* -------------------------- */
-
-.project-hdr-links, .project-desc {
+/* .project-hdr-links, */ .project-desc {
 	width: 35%;
 	float: right;
 	@media screen and (max-width: $tablet-h) {
@@ -397,10 +396,13 @@ h3.large {
 		margin-bottom: $base;
 	}
 }
-
 .project-desc p:first-child {
-	font-weight: bold;
 	margin-top: 0;				// remove top margin
+	&:first-line {
+		@include square-font;
+		font-size: 1.4rem;
+		line-height: 1.5;
+	}
 }
 
 
