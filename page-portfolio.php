@@ -44,7 +44,7 @@ get_header(); ?>
 				
 					<a href="<?php the_permalink(); ?>">
 						<figure>
-							<?php the_post_thumbnail(); ?>
+							<?php the_post_thumbnail( 'project-thumb-300' ); ?>
 							<div class="figslider">View details &raquo;</div>
 						</figure>
 						<h3><?php the_title(); ?></h3>

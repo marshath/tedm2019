@@ -282,12 +282,14 @@ h3.large {
 	display:flex;
 	flex-flow: column;
 	padding-left: 0;		// remove default list padding
+	list-style: none;		// remove bulleted list
 	li {
 		flex-basis: 100%;		// set full width
 		padding: 0 0 $base 0;		// spacing between projects
 		img {
 			width: 100%;
 			height: 100%;
+			object-fit: cover;			// scale and crop sides
 		}
 		a {
 			color: $text;
