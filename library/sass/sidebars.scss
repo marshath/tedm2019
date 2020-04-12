@@ -110,6 +110,7 @@ blockquote:before {
 	background: rgba(255,255,255,0.4);
 	padding: $base 0;
 	margin-bottom: ($base*2);
+	border-radius: 0.25em;							// same as .project figure from modules.scss
 	h3 {
 		text-align: center;
 	}

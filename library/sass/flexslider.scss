@@ -5,21 +5,11 @@
 }
 
 .flex-project-container { // Project images
-	width: 60%;
-	border: 1px solid #999;
-	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid white;		// same as .project figure from modules.scss
 	margin-bottom: ($base*2);
-	display: inline-block;
-	float: left;
-	@include box-shadow(2px 5px 10px rgba(0,0,0,0.3));
-	@media screen and (max-width: $mobile-h) {
-		width: 100%;
-	}
-	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
-		width: 70%;
-		margin-left: 15%;
-		margin-right: 15%;
-	}
+	@include box-shadow(0px 2px 4px rgba(0,0,0,0.4));
+	border-radius: 0.25em;			// same as .project figure from modules.scss
 }
 
 .flex-testimonial-container { /* Testimonial quotes */
@@ -110,7 +100,7 @@ html[xmlns] .slides {
 	.flex-direction-nav a {		// project navigation 
 		width: 30px; 
 		height: 20%; 
-		margin: -50% 0 0;
+		margin: -30% 0 0;
 		display: block; 
 		background: url(library/images/bg_direction_nav.png) no-repeat 0 0 rgba(255,255,255,0.9);
 		position: absolute; 
@@ -154,7 +144,7 @@ html[xmlns] .slides {
 	.flex-control-nav { /* --------- Control Nav --------- */
 		width: 100%; 
 		position: absolute; 
-		bottom: -30px; 
+		bottom: -40px; 
 		text-align: center;
 	}
 	
@@ -172,7 +162,7 @@ html[xmlns] .slides {
 		background: white; 
 		cursor: pointer;
 		text-indent: -9999px;
-		@include box-shadow(0 1px 1px rgba(0,0,0,0.5));
+		//@include box-shadow(0 1px 1px rgba(0,0,0,0.5));
 		border-radius: 4px;
 	}
 	

@@ -6,41 +6,45 @@ Template Name: Projects
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   
-</div><!-- .header-wrap -->
+</div><?php // end .header-wrap ?>
 <main id="site-content" role="main" class="article-wrap">
 
 	<article class="content clearfix">
-    	
-		<h2><?php the_title(); ?></h2>
 		
 		<div class="flex-project-container">
 		    <div class="flexslider">
-		      <ul class="slides">
-				<?php $imagesTypes = get_post_meta($post->ID, 'project_image1'); { // displays project images
-					foreach ($imagesTypes as $imageType) {
-						$fullValue = explode('|', $imageType);
-	
-						$imgTitle = $fullValue[0];
-						$imgLink = $fullValue[1];
-	                            
-						echo "<li><figure><img src='/library/images_project/$imgLink' alt='$imgTitle' name='$imgTitle'></figure></li>";
-					}
-				} ?>
-		      </ul>
+		    	<ul class="slides">
+			    	
+			    	<?php if ( have_rows('project_gallery_images') ) {
+						while ( have_rows('project_gallery_images') ) {
+							the_row();
+							
+							$image = get_sub_field('project_image');
+							$title = get_sub_field('project_image_text'); ?>
+							
+							<li><figure><img src="<?php echo esc_url( home_url( '/' ) ); ?>/library/images_projects/'<?php echo $image; ?>.jpg" alt="<?php echo $title; ?>"></figure></li>
+						
+						<?php } // endwhile ?>
+						
+					<?php } // endif ?>
+					
+		    	</ul>
 		    </div>
     	</div>
     	
+		<h2 class="project-title"><?php the_title(); ?></h2>
+		
 		<div class="project-desc">
 			<?php the_content(); ?>
 		</div>
 		
-	</article> <!-- .content -->
+	</article> <?php // end .content ?>
 	
 	<div class="related-wrap">
 	
 		<?php get_sidebar('project'); ?>
 	
-	</div> <!-- .article-wrap -->
+	</div> <?php // end .article-wrap ?>
 	
 </main>
 <?php endwhile; ?>
