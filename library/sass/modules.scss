@@ -312,7 +312,7 @@ h3.large {
 	figure {
 		width: 100%;
 		height: ($base*10);
-		border: 2px solid white;
+		border: 4px solid white;
 		margin-bottom: ($base/1.75);
 		border-radius: 0.25em;
 		@include box-shadow(0 1px 2px rgba(0,0,0,0.5));
@@ -423,7 +423,7 @@ h2.project-title {
 .image-wrap {
 	width: 55%;
 	margin: 0 0 $base 2em;
-	border: 2px solid white;						// same as .project figure from modules.scss
+	border: 4px solid white;						// same as .project figure from modules.scss
 	display: block;
 	float: right;
 	border-radius: 0.25em;							// same as .project figure from modules.scss

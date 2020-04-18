@@ -111,6 +111,8 @@ blockquote:before {
 	padding: $base 0;
 	margin-bottom: ($base*2);
 	border-radius: 0.25em;							// same as .project figure from modules.scss
+	border: 4px solid white;							// same as .project figure from modules.scss
+	@include box-shadow(0 2px 4px rgba(0,0,0,0.4));	// same as .project figure:hover from modules.scss
 	h3 {
 		text-align: center;
 	}
