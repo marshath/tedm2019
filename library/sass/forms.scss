@@ -30,6 +30,7 @@ input.wpcf7-form-control, textarea.wpcf7-form-control, .mc-field-group input, .s
 	padding: ($base/2) $base;
 	display: block;
 	border: 1px solid #aaa;
+	outline:none;				// remove default browser outline
 	&:focus {
 		background: white;
 	}

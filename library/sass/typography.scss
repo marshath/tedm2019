@@ -101,16 +101,19 @@ a.primary-btn, .wpcf7-form .wpcf7-submit, .sidebar-mc-form .button { /* --------
 a.secondary-btn, .sidebar-mc-form .button2 { /* --------- Secondary Button --------- */
 	background-color: $gray-light-alpha;
 	background: linear-gradient( to bottom, $gray-light-alpha 0.05, $gray-dark-alpha 1 );
-	color: lighten($text,20%);
+	color: lighten($text, 20);
 	padding: ($base/2) $base;
 	display: inline-block;
 	@include radius($corner);
-	border: 1px solid darken($tan,10);
-	box-shadow: inset 0px 1px 2px white, inset 0px -1px 1px darken($tan,4), 0px 1px 1px white;
+	border: 1px solid lighten($text, 45);
 	&:hover {
 		background-color: $gray-dark-alpha;
 		background: linear-gradient( to bottom, $gray-dark-alpha 0.05, $gray-light-alpha 1 );
 		color: $text;
-		box-shadow: inset 0px -1px 2px white, 0px 1px 1px white;
-	}
+		//box-shadow: inset 0px -1px 2px white, 0px 1px 1px white;
+		color: white !important;
+		background: $orange-light;
+		background: linear-gradient(to right, $orange 0, $orange-light 100%);
+		border-color: white;
+	} 
 }

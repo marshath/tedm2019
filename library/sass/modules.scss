@@ -136,7 +136,8 @@
 	background: $contact-light; /* Old browsers */
 	background: linear-gradient(to bottom, $contact-light 0%, $contact-dark 100%); /* W3C */
 	padding: $base;
-	box-shadow: inset 2px 2px 2px lighten($contact-light, 10%), inset -2px -2px 2px darken($contact-dark,10%), -1px 6px 12px rgba(0,0,0,0.5);
+	border-radius: 0.25em;
+	box-shadow: inset 2px 2px 2px lighten($contact-light, 10%), inset -2px -2px 2px darken($contact-dark,10%), 0 3px 6px rgba(0,0,0,0.3);
 }
 
 
@@ -356,7 +357,8 @@ h3.large {
 	margin-top: ($base/4);		// set spacing between name and tags
 	padding: 0;
 	a {
-		background: rgba(255,255,255,0.5);
+		background: $gray-light-alpha;
+		color: lighten($text,45) !important;
 		@include radius(2px);
 		padding: 0.125em 0.5em;
 		font-size: $font14;
