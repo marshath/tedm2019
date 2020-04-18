@@ -20,7 +20,7 @@ get_header(); ?>
 				<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-650.png 650w, 
 				<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-975.png 975w, 
 				<?php echo get_template_directory_uri(); ?>/library/images/img-homepage-1300.png 1300w" 
-				sizes="(min-width: 325px) 50vw, (min-width: 650px) 100vw, 100vw">
+				sizes="(min-width: 325px) 50vw, (min-width: 650px) 100vw, (min-width: 975px) 100vw, 100vw">
 			</div>
 		</figure>
     </section>
