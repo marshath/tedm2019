@@ -41,7 +41,20 @@
 		<nav id="site-navigation" class="main-navigation">
 			<h3 id="menu-toggle"><a href="#"><span class="menu-icon" aria-hidden="true" data-icon="&#xe908;"></span> <span class="menu-text">Menu</span></a></h3>
 			<ul id="nav-menu" class="menu" role="navigation">
-				<?php wp_list_pages('sort_column=menu_order&depth=1&exclude=2&title_li=');?>
+				<?php if (is_archive()) { // project archive navigation ?>
+					<li class="page_item page-item-21 current_page_item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/" aria-current="page">Portfolio</a></li>
+					<li class="page_item page-item-1110"><a href="<?php echo esc_url( home_url( '/about-me/' ) ); ?>">About Me</a></li>
+					<li class="page_item page-item-1108"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">Blog</a></li>
+					<li class="page_item page-item-19"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact</a></li> <?php
+				} else { // all other navigation
+					wp_list_pages( array (
+					'post_type' => 'page', //ensure only standard pages are listed
+					'title_li' => '',
+					'sort_column' => 'menu_order',
+					'depth' => 1,
+					'exclude' => 2, // exclude home page
+					));
+				} ?>
 			</ul>
 		</nav><?php // ------- #site-navigation ------- ?>
 	</header><?php // ------- #masthead ------- ?>

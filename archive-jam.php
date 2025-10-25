@@ -50,7 +50,7 @@
 							<td class="jam-video"><?php // if video file is available, display audio link
 								$video_file = get_field('video');
 								if ($video_file) { ?>
-									<a href="/library/jam/<?php echo $video_file; ?>.mov" title="Play <?php the_title(); ?> video" rel="bookmark"><span class="dashicons dashicons-video-alt3"></span></a>
+									<a href="/library/jam/<?php echo $video_file; ?>.mp4" title="Play <?php the_title(); ?> video" rel="bookmark"><span class="dashicons dashicons-video-alt3"></span></a>
 								<?php } ?></td>
 
 							<td class="jam-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a> <?php edit_post_link( __( '- Edit' ), '<span class="edit-link">', '</span>' ); ?></td>

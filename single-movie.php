@@ -24,7 +24,7 @@
 
 					<div class="movie-right">
 
-						<div class="video-btn"><a href="/library/movie/<?php echo the_field('video_file_name'); ?>.mov" title="Watch <?php the_title(); ?>" rel="bookmark"><span class="dashicons dashicons-video-alt3"></span></a></div>
+						<div class="video-btn"><a href="/library/movie/<?php echo the_field('video_file_name'); ?>.mp4" title="Watch <?php the_title(); ?>" rel="bookmark"><span class="dashicons dashicons-video-alt3"></span></a></div>
 
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
