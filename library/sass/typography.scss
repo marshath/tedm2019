@@ -32,7 +32,7 @@
 h2, h3, h4, h5, h6 {
 	@include square-font;
 	line-height: 1em;
-	margin: 0 0 ($base / 2) 0;
+	margin: 0 0 calc($base / 2) 0;
 }
 
 h2, h3 { text-shadow: 0 1px white; }
@@ -41,8 +41,8 @@ h2 { font-size: 2em; }
 h2.indent { padding-left: 1em; }
 h3 { font-size: $font20; }
 p { font-size: $font16; line-height: 1.8; }
-p.space { margin-bottom: ($base * 2); }
-p.space-columns { margin-bottom: ($base * 2); }
+p.space { margin-bottom: calc($base * 2); }
+p.space-columns { margin-bottom: calc($base * 2); }
 .archive-title {
 	margin-bottom: $base;
 }
@@ -60,7 +60,7 @@ hr {
 
 ::selection { background: $orange-light; }
 
-.screen-reader-text {
+.screen-reader-text, .client-love {
 	display: none;
 }
 	
@@ -102,7 +102,7 @@ a.secondary-btn, .sidebar-mc-form .button2 { /* --------- Secondary Button -----
 	background-color: $gray-light-alpha;
 	background: linear-gradient( to bottom, $gray-light-alpha 0.05, $gray-dark-alpha 1 );
 	color: lighten($text, 20);
-	padding: ($base/2) $base;
+	padding: calc($base/2) $base;
 	display: inline-block;
 	@include radius($corner);
 	border: 1px solid lighten($text, 45);

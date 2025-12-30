@@ -50,7 +50,7 @@ blockquote:before {
 }
 
 .client-quotes {
-	padding-bottom: ($base *2);
+	padding-bottom: calc($base *2);
 	p {
 		text-indent: 1.5em;
 		z-index: 2;
@@ -89,9 +89,6 @@ blockquote:before {
 		transform-origin: center center;
 	}
 }
-.client-love {
-	@extend .screen-reader-text;
-}
 .related-sites li {
 	@media screen and (min-width: $laptop) and (max-width: $computer-h) {
 		&:nth-child(4) {		// remove widow project when 3-up
@@ -109,7 +106,7 @@ blockquote:before {
 	width: 100%;
 	background: rgba(255,255,255,0.4);
 	padding: $base 0;
-	margin-bottom: ($base*2);
+	margin-bottom: calc($base*2);
 	border-radius: 0.25em;							// same as .project figure from modules.scss
 	border: 4px solid white;							// same as .project figure from modules.scss
 	@include box-shadow(0 2px 4px rgba(0,0,0,0.4));	// same as .project figure:hover from modules.scss
@@ -136,7 +133,7 @@ blockquote:before {
 .twitter-timeline {
 	width: 286px;
 	margin-top: $base;
-	margin-bottom: ($base*0.5);
+	margin-bottom: calc($base*0.5);
 	@media screen and (min-width: $tablet-v) and (max-width: $tablet-h) {
 		width:48%;
 		float: right;

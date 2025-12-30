@@ -22,7 +22,7 @@
 		@include script-font;
 		font-size: 3.1em;
 		line-height: 1.125em;
-		margin: 0 0 ($base/4) 0;
+		margin: 0 0 calc($base/4) 0;
 	}
 	h2 {
 		@include regular;
@@ -187,7 +187,7 @@
 }
 .center {
 	text-align: center;
-	margin-bottom: ($base*2);
+	margin-bottom: calc($base*2);
 	.icon {
 		font-size: 1.4rem;
 	}
@@ -197,7 +197,7 @@
 	ul.social {
 		width: 100%;
 		padding-left: 0;
-		padding-bottom: ($base*3);
+		padding-bottom: calc($base*3);
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -242,7 +242,7 @@
 		display: block;
 	}
 	.secondary-btn {
-		margin-bottom: ($base*1.5);
+		margin-bottom: calc($base*1.5);
 	}
 	@media screen and (max-width: $mobile-h) {
 		figure {
@@ -312,16 +312,16 @@ h3.large {
 	}
 	figure {
 		width: 100%;
-		height: ($base*10);
+		height: calc($base*10);
 		border: 4px solid white;
-		margin-bottom: ($base/1.75);
+		margin-bottom: calc($base/1.75);
 		border-radius: 0.25em;
 		@include box-shadow(0 1px 2px rgba(0,0,0,0.5));
 		overflow: hidden;
 		@include transition(all, 0.15s, ease-out);
 	}
 	.figslider {
-		height: ($base*2.25);
+		height: calc($base*2.25);
 		background: rgba(255,255,255,0.8);
 		background: linear-gradient(10deg, rgba(255,255,255,0.8) 40%, rgba(255,255,255,0) 80%);
 		font-size: $font12;
@@ -329,7 +329,7 @@ h3.large {
 		text-shadow: 0px -1px 2px white;
 		padding: 0.5em 1em;
 		position: relative;
-		margin-top: -($base*2.25);
+		margin-top: calc(($base * 2.25) * -1);
 		@include transition(all, 0.15s, ease-in-out);
 	}
 	h3 {
@@ -354,7 +354,7 @@ h3.large {
 	}
 }
 .tags {
-	margin-top: ($base/4);		// set spacing between name and tags
+	margin-top: calc($base/4);		// set spacing between name and tags
 	padding: 0;
 	a {
 		background: $gray-light-alpha;
@@ -394,7 +394,7 @@ h3.large {
 /* -------------------------- */
 h2.project-title {
 	text-align: center;
-	margin-top: ($base * 1.5);
+	margin-top: calc($base * 1.5);
 }
 .project-desc {
 	p {
@@ -409,7 +409,7 @@ h2.project-title {
 		}
 	}
 	@media screen and (min-width: $laptop) {
-		margin-bottom: ($base * 2);
+		margin-bottom: calc($base * 2);
 		p {
 			max-width: 56em;
 			margin: auto;
@@ -464,7 +464,7 @@ ul.blogroll {
 			display: flex;
 			flex-flow: row nowrap;
 			color: $text;
-			margin-bottom: ($base/2);			// spacing between blog posts
+			margin-bottom: calc($base/2);			// spacing between blog posts
 			&:hover {
 				color: $orange;
 				p {
@@ -515,7 +515,7 @@ ul.blogroll {
 	padding-left:0;
 	ul {
 		width: 100%;
-		height: ($base*6);
+		height: calc($base*6);
 		display: block;
 		padding: 0;
 		list-style: none;
@@ -532,7 +532,7 @@ ul.blogroll {
 			height: 100%;
 			color: $orange;
 			text-decoration: none;
-			padding: ($base*0.5) 1em;
+			padding: calc($base*0.5) 1em;
 			display: inline-block;
 		}
 		a {
@@ -551,7 +551,7 @@ ul.blogroll {
 		background: $orange;
 		color: white;
 		font-weight: bold;
-		padding: ($base*0.5) 1em;
+		padding: calc($base*0.5) 1em;
 		display: inline-block;
 	}
 }
@@ -576,7 +576,7 @@ ul.blogroll {
 table { 
 	border-collapse: collapse; 
 	width: 100%;
-	margin-bottom: ($base*1);
+	margin-bottom: calc($base*1);
 }
 thead { 
 	width: 100%; 
@@ -682,7 +682,7 @@ tr {
 
 .jamsidebar { 
 	width: 28%; 
-	margin-bottom: ($base*2);
+	margin-bottom: calc($base*2);
 	float: right; 
 	img {
 		width: 100%;
@@ -726,13 +726,13 @@ tr {
 	img {
 		width: 100%;
 		height:auto;
-		margin-bottom: ($base*0.5);
+		margin-bottom: calc($base*0.5);
 		border: 3px solid white;
 		@include box-shadow(0 1px 2px rgba(0,0,0,0.5));
 	}
 	h2 { 
 		width:100%; 
-		margin-bottom:($base*0.25);
+		margin-bottom:calc($base*0.25);
 	}
 	@media screen and (max-width: $mobile-h) {
 		width: 100%;
@@ -741,13 +741,13 @@ tr {
 
 .movie-right { 
 	width:100%;
-	min-height: ($base*12);
+	min-height: calc($base*12);
 	font-size:0.5em; 
 }
 
 .video-details {
 	font-size: 0.7em;
-	margin-bottom: ($base*0.5);
+	margin-bottom: calc($base*0.5);
 }
 
 .video-info {
