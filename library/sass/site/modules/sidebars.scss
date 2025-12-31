@@ -89,6 +89,9 @@ blockquote:before {
 		transform-origin: center center;
 	}
 }
+.client-love {
+	@extend .screen-reader-text;
+}
 .related-sites li {
 	@media screen and (min-width: $laptop) and (max-width: $computer-h) {
 		&:nth-child(4) {		// remove widow project when 3-up

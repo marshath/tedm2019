@@ -70,14 +70,14 @@ textarea.wpcf7-form-control {
 		color: white;
 		text-shadow: 0 2px 0 black;
 		display: block;
+		padding: calc($base*0.5) 1em;
 		border: 0;
-		@include box-shadow(inset 0px 0px 0px black);
-		@include transition(all, 1s, ease-out);
 		width:intrinsic;
 		position: absolute;
 		top: calc($base*0.75);
 		right:0;
-		padding: calc($base*0.5) 1em;
+		@include box-shadow(inset 0px 0px 0px black);
+		@include transition(all, 1s, ease-out);
 		&:hover {
 			background: lighten($green, 20%);
 			@include box-shadow(inset 0px 0px 40px darken($green,10%));

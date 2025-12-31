@@ -8,14 +8,14 @@ Author URI: http://tedm.net/
 Tags: tedm, portfolio
 */
 
-/* Compiled Styles */
+/* Import and compile all SASS / CSS styles */
 
-@import "normalize.scss";
-@import "grid.scss";
-@import "typography.scss";
-@import "header.scss";
-@import "modules.scss";
-@import "flexslider.scss";
-@import "sidebars.scss";
-@import "footer.scss";
-@import "forms.scss";
+/*******************************
+SITE STYLES 
+*******************************/
+@import "site/base";
+
+/*******************************
+VENDOR STYLES 
+*******************************/
+@import "vendor/all";
